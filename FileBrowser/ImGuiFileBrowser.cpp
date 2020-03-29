@@ -611,7 +611,7 @@ namespace imgui_addons
                 ImGui::PushFocusScope(focus_scope_id);
                 for(auto& element : inputcb_filter_files)
                 {
-                    if(ImGui::Selectable(element.get().c_str(), false, ImGuiSelectableFlags_NoHoldingActiveID | ImGuiSelectableFlags_PressedOnClick))
+                    if(ImGui::Selectable(element.get().c_str(), false, ImGuiSelectableFlags_NoHoldingActiveID | ImGuiSelectableFlags_SelectOnClick))
                     {
                         if(element.get().size() > 256)
                         {
